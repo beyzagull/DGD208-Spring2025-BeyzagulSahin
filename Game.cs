@@ -25,7 +25,7 @@ public class Game
     private void Initialize()
     {
         Console.WriteLine("🐾🌟 Welcome to the ✨ Whimsical Pet Realms ✨");
-        Console.WriteLine("🦋 Crafted with cosmic love by: Beyzagul Sahin 🌙\n");
+        Console.WriteLine("🦋 Crafted with cosmic love by: Beyzagul Sahin and gpt :=) 🌙\n");
     }
 
     private string GetUserInput()
