@@ -12,3 +12,4 @@ C:\Users\beyza\PetSim\obj\Debug\net9.0\refint\PetSim.dll
 C:\Users\beyza\PetSim\obj\Debug\net9.0\PetSim.pdb
 C:\Users\beyza\PetSim\obj\Debug\net9.0\PetSim.genruntimeconfig.cache
 C:\Users\beyza\PetSim\obj\Debug\net9.0\ref\PetSim.dll
+C:\Users\beyza\PetSim\obj\Debug\net9.0\PetSim.sourcelink.json
