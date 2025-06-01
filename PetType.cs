@@ -1,8 +1,8 @@
 public enum PetType
 {
-    Dog,
-    Cat,
-    Bird,
-    Fish,
-    Rabbit
+    Dog,        // 🐲 Dragon
+    Cat,        // 🦖 Dinosaur
+    Bird,       // 🌬️ Northern Swallow Bird
+    Rabbit,     // 🐢 Turtle
+    Ghost       // Gulyabani
 }

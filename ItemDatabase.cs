@@ -1,10 +1,8 @@
-using System.Collections.Generic;
-
 public static class ItemDatabase
 {
     public static List<Item> AllItems = new List<Item>
     {
-        // 🌬️ Northern Swallow Bird (uses PetType.Bird)
+        // 🌬️ Northern Swallow Bird
         new Item {
             Name = "Feather Seed Mix",
             Type = ItemType.Food,
@@ -30,7 +28,7 @@ public static class ItemDatabase
             Duration = 3.0f
         },
 
-        // 🐢 Turtle (uses PetType.Rabbit as placeholder)
+        // 🐢 Turtle
         new Item {
             Name = "Crunchy Lettuce",
             Type = ItemType.Food,
@@ -56,33 +54,7 @@ public static class ItemDatabase
             Duration = 4.0f
         },
 
-        // 💧 Water Lizard (uses PetType.Fish)
-        new Item {
-            Name = "Swamp Slime Snack",
-            Type = ItemType.Food,
-            CompatibleWith = new List<PetType> { PetType.Fish },
-            AffectedStat = PetStat.Hunger,
-            EffectAmount = 18,
-            Duration = 2.0f
-        },
-        new Item {
-            Name = "Water Bubble Toy",
-            Type = ItemType.Toy,
-            CompatibleWith = new List<PetType> { PetType.Fish },
-            AffectedStat = PetStat.Fun,
-            EffectAmount = 15,
-            Duration = 2.5f
-        },
-        new Item {
-            Name = "Algae Pillow",
-            Type = ItemType.Toy,
-            CompatibleWith = new List<PetType> { PetType.Fish },
-            AffectedStat = PetStat.Sleep,
-            EffectAmount = 20,
-            Duration = 3.0f
-        },
-
-        // 🐲 Dragon (uses PetType.Dog)
+        // 🐲 Dragon
         new Item {
             Name = "Spicy Ember Treat",
             Type = ItemType.Food,
@@ -108,7 +80,7 @@ public static class ItemDatabase
             Duration = 5.0f
         },
 
-        // 🦖 Dinosaur (uses PetType.Cat)
+        // 🦖 Dinosaur
         new Item {
             Name = "Jurassic Leaf Snack",
             Type = ItemType.Food,
@@ -132,6 +104,32 @@ public static class ItemDatabase
             AffectedStat = PetStat.Sleep,
             EffectAmount = 35,
             Duration = 4.5f
+        },
+
+        // 👻 Gulyabani
+        new Item {
+            Name = "Dark Mist Soup",
+            Type = ItemType.Food,
+            CompatibleWith = new List<PetType> { PetType.Ghost },
+            AffectedStat = PetStat.Hunger,
+            EffectAmount = 18,
+            Duration = 2.0f
+        },
+        new Item {
+            Name = "Haunted Whistle",
+            Type = ItemType.Toy,
+            CompatibleWith = new List<PetType> { PetType.Ghost },
+            AffectedStat = PetStat.Fun,
+            EffectAmount = 25,
+            Duration = 2.5f
+        },
+        new Item {
+            Name = "Eerie Blanket",
+            Type = ItemType.Toy,
+            CompatibleWith = new List<PetType> { PetType.Ghost },
+            AffectedStat = PetStat.Sleep,
+            EffectAmount = 28,
+            Duration = 3.5f
         }
     };
 }

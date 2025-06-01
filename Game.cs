@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 public class Game
 {
     private bool _isRunning;
@@ -17,9 +12,11 @@ public class Game
         {
             string userChoice = GetUserInput();
             await ProcessUserChoice(userChoice);
+            TickPets();
         }
 
         Console.WriteLine("✨🌈 Thanks for playing, magical creature whisperer!");
+        
     }
 
     private void Initialize()
@@ -57,7 +54,7 @@ public class Game
                 break;
 
             case "4":
-                Console.WriteLine("🧵✨ This world was stitched together by: Beyzagul Sahin");
+                Console.WriteLine("🧵✨ This world was stitched together by: Beyzagul Sahin and gpt");
                 break;
 
             case "0":
@@ -76,7 +73,7 @@ public class Game
         {
             "🌬️ Northern Swallow Bird",
             "🐢 Turtle",
-            "💧 Water Lizard",
+            "💧 Gulyabani",
             "🐲 Dragon",
             "🦖 Dinosaur"
         };
@@ -142,5 +139,13 @@ public class Game
     {
         Console.WriteLine($"\n💔 Oh no... {pet.Name} has passed into the stars... 🌠");
         adoptedPets.Remove(pet);
+    }
+
+    private void TickPets()
+    {
+        foreach (var pet in adoptedPets.ToList())
+        {
+            pet.Tick();
+        }
     }
 }
